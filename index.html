@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biggest Books Library by Arthur Wekati</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h1 class="text-center text-success my-4">Welcome to the Biggest Books Library</h1>
+            <!-- Default Self-help Books -->
+            <div class="row" id="default-books">
+                <!-- Example books -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/516c8GGHGEL._SL1000_.jpg" class="card-img-top" alt="Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The 7 Habits of Highly Effective People</h5>
+                            <p class="card-text">A framework for personal and professional effectiveness based on principles and habits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/81ANaVZk5LL._SL1500_.jpg" class="card-img-top" alt="Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Atomic Habits</h5>
+                            <p class="card-text">The science of habit formation and provides practical advice on how to build good habits and break bad ones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://i5.walmartimages.com/seo/Daring-Greatly-How-the-Courage-to-Be-Vulnerable-Transforms-the-Way-We-Live-Love-Parent-and-Lead-Paperback-9781592408412_88d463ca-f67e-4c67-ba33-e582c770e179.b40ffaf2f6d2972b1f6d46972520e3c6.jpeg" class="card-img-top"
+                            alt="Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">Daring Greatly</h5>
+                            <p class="card-text">Explores vulnerability, courage, and wholehearted living, emphasizing the importance of embracing vulnerability for personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/61Ij8nLooNL._SL1500_.jpg" class="card-img-top" alt="Book Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">The Power of Now</h5>
+                            <p class="card-text">This spiritual classic encourages living in the present moment, transcending ego, and finding inner peace and enlightenment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more books as needed -->
+            </div>
+
+
+            <h3>To order any book click on the <a href="https://wa.me/254753619464">whatsapp icon +254753619464</a></h3>
+            <!-- Search Books -->
+            <div class="input-group my-4 w-50 mx-auto">
+                <input type="text" id="search-field" class="form-control" placeholder="Search Book Title or Author e.g. (Atomic Habits, James Clear)" aria-label="Recipient's username" aria-describedby="button-search">
+                <button onclick="loadData()" class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+            </div>
+
+            <!-- Loading Spinner -->
+            <button id="loading" class="btn btn-primary spinner" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading..
+            </button>
+
+            <!-- Search Result found -->
+            <div id="total-found"></div>
+
+            <!-- Error Message -->
+            <div id="error-message"></div>
+
+            <!-- Search Results -->
+            <div class="container mt-3">
+                <div id="search-result" class="row row-cols-md-2"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/254753619464" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

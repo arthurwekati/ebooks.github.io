@@ -1,0 +1,51 @@
+/* General Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Default Books Section */
+
+#default-books .card {
+    transition: transform 0.2s;
+}
+
+#default-books .card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Search Results */
+
+#search-result .card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* WhatsApp Button */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
