@@ -49,3 +49,22 @@ body {
 .whatsapp-icon:hover {
     transform: scale(1.1);
 }
+
+
+/* Social Media Icons */
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon-img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon-img:hover {
+    transform: scale(1.2);
+}
